@@ -40,19 +40,23 @@ namespace LoggingKata
             // TODO: Create a TacoBell class
             // that conforms to ITrackable
 
+            // TODO: Create an instance of the TacoBell class
             // TODO: Create an instance of the Point Struct
             // TODO: Set the values of the point correctly (Latitude and Longitude) 
-            Point item = new Point(latitude, longitude);
+            var tacoBell = new TacoBell();
+            tacoBell.Name = name;
 
-
-            // TODO: Create an instance of the TacoBell class
             // TODO: Set the values of the class correctly (Name and Location)
             // TODO: Set the values of the class correctly (Name and Location)
+            var point = new Point();
+            point.Latitude = latitude;
+            point.Longitude = longitude;
+            tacoBell.Location = point;
 
             // TODO: Then, return the instance of your TacoBell class,
             // since it conforms to ITrackable
 
-            return null;
+            return tacoBell;
         }
     }
 }
