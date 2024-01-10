@@ -20,6 +20,7 @@ namespace LoggingKata
             if (cells.Length < 3)
             {
                 // Log error message and return null
+                logger.LogWarning("Less than three characters. Incomplete data.");
                 return null; 
             }
 
@@ -32,18 +33,20 @@ namespace LoggingKata
             // You're going to need to parse your string as a `double`
             // which is similar to parsing a string as an `int`
             var longitude = double.Parse(cells[1]);
-            
+
             // TODO: Grab the name from your array at index 2
-            var name = double.Parse(cells[2]);
+            var name = cells[2];
 
             // TODO: Create a TacoBell class
             // that conforms to ITrackable
-            
 
             // TODO: Create an instance of the Point Struct
             // TODO: Set the values of the point correctly (Latitude and Longitude) 
+            Point item = new Point(latitude, longitude);
+
 
             // TODO: Create an instance of the TacoBell class
+            // TODO: Set the values of the class correctly (Name and Location)
             // TODO: Set the values of the class correctly (Name and Location)
 
             // TODO: Then, return the instance of your TacoBell class,
